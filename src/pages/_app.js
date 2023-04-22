@@ -1,5 +1,14 @@
-import '@/styles/globals.css'
+import React from "react";
+import PitchDetector from "../components/PitchDetector";
+import "../styles/globals.css"
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = () => {
+  return (
+    <div className="contaner">
+      <h1>Find Pitch</h1>
+      <PitchDetector />
+    </div>
+  );
+};
+
+export default App;
